@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 17:08:13 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/08 16:40:45 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/12 20:48:54 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ t_param		init_obj(void)
 		.width = 0,
 		.expect_precision = 0,
 		.precision = 0,
+		.is_precision = 0,
 		.modifier = NAN,
 		.is_unsigned = 0,
 		.type = 0
@@ -75,8 +76,6 @@ void		modifier_assign(char *format, int *i, t_param *obj)
 
 void		assign(char *format, int i, t_param *obj)
 {
-	int size;
-
 	while (is_flag(format[i]))
 		flag_assign(format, &i, obj);
 	if (format[i] == '*')
@@ -90,14 +89,16 @@ void		assign(char *format, int i, t_param *obj)
 		obj->expect_precision = 1;
 		i += 2;
 	}
-	else if (format[i] == '.' && ('1' <= format[i + 1] && format[i + 1] <= '9'))
+	else if (format[i] == '.')
 	{
 		i++;
+		obj->is_precision = 1;
 		obj->precision = ft_atoif(&(format[i]), &i);
 	}
 	modifier_assign(format, &i, obj);
 	obj->is_unsigned = is_unsigned(format[i]);
 	obj->type = format[i];
+	//printf("ME HERE%d\n", obj->precision);
 }
 
 int			get_arg(char *format, int i, va_list list)
@@ -106,5 +107,5 @@ int			get_arg(char *format, int i, va_list list)
 
 	obj = init_obj();
 	assign(format, i, &obj); // Получили структуру с флагами и размерами, написать вывод и войну флагов
-	print_processing(obj, list);
+	return (print_processing(obj, list));
 }

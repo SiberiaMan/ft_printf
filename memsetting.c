@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 18:13:29 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/08 20:54:12 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/12 16:46:51 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void	*ft_callocf(size_t count, size_t size, char c)
 	void	*ptr;
 
 	ptr = (char *)malloc(count * size);
-	if (ptr == NULL)
-		return (NULL);
+	if (!ptr)
+		return (0);
 	ft_memsetf(ptr, c, count * size);
 	return (ptr);
 }

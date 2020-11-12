@@ -1,35 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoif.c                                         :+:      :+:    :+:   */
+/*   ft_strcpyf.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/07 20:19:42 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/12 20:48:52 by dchani           ###   ########.fr       */
+/*   Created: 2020/11/12 16:43:30 by dchani            #+#    #+#             */
+/*   Updated: 2020/11/12 18:04:46 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int					ft_atoif(char *str, int *i)
+void        ft_strcpyf(char *dst, char *src, size_t dstsize)
 {
-	int     res;
-	int     fl;
-
-	res = 0;
-	fl = 1;
-	if (*str == '-' || *str == '+')
-	{
-		if (*str == '-')
-			fl = -1;
-		str++;
-	}
-	while ('0' <= *str && *str <= '9')
-	{
-		(*i)++;
-		res = res * 10 + *str - '0';
-		str++;
-    }
-	return (res * fl);
+    while (dstsize--)
+        *dst++ = *src++;
 }

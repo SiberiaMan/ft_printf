@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlcpy.c                                          :+:      :+:    :+:   */
+/*   value_print.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/28 22:39:28 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/08 20:54:08 by dchani           ###   ########.fr       */
+/*   Created: 2020/11/12 19:41:15 by dchani            #+#    #+#             */
+/*   Updated: 2020/11/12 20:00:47 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void		ft_strcpyf(char *restrict dst,const char *restrict src, size_t dstsize)
+int				to_print_val(t_param obj, va_list list)
 {
-	while(dstsize--)
-		(*dst)++ = *(src)++;
-	free(src);
+	unsigned int		u_val;
+	short int			sh_val;
+	int					i_val;
+	unsigned long int	ul_val;
+	long int			li_val;
+
 }

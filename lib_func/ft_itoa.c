@@ -6,19 +6,11 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 17:56:44 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/02 21:33:31 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/12 19:58:59 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static	int			ft_abs(int n)
-{
-	if (n < 0)
-		return (n * (-1));
-	else
-		return (n);
-}
+#include "ft_printf.h"
 
 static	int			nlen(int n, int fl)
 {
@@ -53,7 +45,7 @@ char				*ft_itoa(int n)
 		ptr[0] = '0';
 	while (n)
 	{
-		ptr[size--] = ft_abs(n % 10) + '0';
+		ptr[size--] = ABS(n % 10) + '0';
 		n /= 10;
 	}
 	if (fl)

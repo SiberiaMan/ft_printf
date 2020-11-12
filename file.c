@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+
+#include "ft_printf.h"
 
 static	int			ft_abs(int n)
 {
@@ -71,6 +71,17 @@ char	*init(void)
 
 int main()
 {
-	char *v = init();
-	printf("%d", printf("%-15.2s", 0));
+	/*printf("%d\n", printf("%----15c\n", 'd'));
+	printf("============================\n");
+	printf("%d\n", ft_printf("%----15c\n", 'd')); */ 
+	/*printf("%d\n", printf("%-*.*s\n%-5.100s\n", 20, 5, "Hello", "World"));
+    printf("============================\n");
+    printf("%d\n", ft_printf("%-*.*s\n%-5.100s\n", 20, 5,  "Hello", "World")); */
+	/*printf("%d\n", printf("%5.c", 'c'));
+    printf("============================\n");
+    printf("%d\n", ft_printf("%5.c", 'c')); */
+	printf("%d\n", printf("%5.s", "Hello World"));
+    printf("============================\n");
+    printf("%d\n", ft_printf("%5.s", "Hello World"));
+	//printf("%-5lf", 7594857.585995585585);
 }
