@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/phili/Desktop/git/project/file.c
+/home/phili/Desktop/git/repo/file.c
 ft_printf.h
-/home/phili/Desktop/git/project/ft_printf.h
+/home/phili/Desktop/git/repo/ft_printf.h
 
-/home/phili/Desktop/git/project/ft_printf.h
+/home/phili/Desktop/git/repo/ft_printf.h
 stdlib.h
 -
 unistd.h

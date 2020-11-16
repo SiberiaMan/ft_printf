@@ -119,5 +119,7 @@ int main()
     printf("%d\n", printf("%+05d\n", 889));
     printf("---------------------------\n");   // -> failed test
     ft_printf("%d\n", ft_printf("%+05d\n", 889));
-    printf("END CHECK");
+   // printf("%*d\n", -10, 3);
+    //ft_printf("%*d", -10, 3);
+    //printf("END CHECK");
 }

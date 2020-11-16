@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/phili/Desktop/git/project
+CMAKE_SOURCE_DIR = /home/phili/Desktop/git/repo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/phili/Desktop/git/project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/phili/Desktop/git/repo/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project.dir/depend.make
@@ -79,198 +79,198 @@ include CMakeFiles/project.dir/flags.make
 
 CMakeFiles/project.dir/check_arg.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/check_arg.c.o: ../check_arg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/project.dir/check_arg.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/check_arg.c.o   -c /home/phili/Desktop/git/project/check_arg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/project.dir/check_arg.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/check_arg.c.o   -c /home/phili/Desktop/git/repo/check_arg.c
 
 CMakeFiles/project.dir/check_arg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/check_arg.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/check_arg.c > CMakeFiles/project.dir/check_arg.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/check_arg.c > CMakeFiles/project.dir/check_arg.c.i
 
 CMakeFiles/project.dir/check_arg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/check_arg.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/check_arg.c -o CMakeFiles/project.dir/check_arg.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/check_arg.c -o CMakeFiles/project.dir/check_arg.c.s
 
 CMakeFiles/project.dir/file.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/file.c.o: ../file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/project.dir/file.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/file.c.o   -c /home/phili/Desktop/git/project/file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/project.dir/file.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/file.c.o   -c /home/phili/Desktop/git/repo/file.c
 
 CMakeFiles/project.dir/file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/file.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/file.c > CMakeFiles/project.dir/file.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/file.c > CMakeFiles/project.dir/file.c.i
 
 CMakeFiles/project.dir/file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/file.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/file.c -o CMakeFiles/project.dir/file.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/file.c -o CMakeFiles/project.dir/file.c.s
 
 CMakeFiles/project.dir/ft_atoif.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/ft_atoif.c.o: ../ft_atoif.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project.dir/ft_atoif.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_atoif.c.o   -c /home/phili/Desktop/git/project/ft_atoif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/project.dir/ft_atoif.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_atoif.c.o   -c /home/phili/Desktop/git/repo/ft_atoif.c
 
 CMakeFiles/project.dir/ft_atoif.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/ft_atoif.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/ft_atoif.c > CMakeFiles/project.dir/ft_atoif.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/ft_atoif.c > CMakeFiles/project.dir/ft_atoif.c.i
 
 CMakeFiles/project.dir/ft_atoif.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/ft_atoif.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/ft_atoif.c -o CMakeFiles/project.dir/ft_atoif.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/ft_atoif.c -o CMakeFiles/project.dir/ft_atoif.c.s
 
 CMakeFiles/project.dir/ft_printf.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/project.dir/ft_printf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_printf.c.o   -c /home/phili/Desktop/git/project/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/project.dir/ft_printf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_printf.c.o   -c /home/phili/Desktop/git/repo/ft_printf.c
 
 CMakeFiles/project.dir/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/ft_printf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/ft_printf.c > CMakeFiles/project.dir/ft_printf.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/ft_printf.c > CMakeFiles/project.dir/ft_printf.c.i
 
 CMakeFiles/project.dir/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/ft_printf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/ft_printf.c -o CMakeFiles/project.dir/ft_printf.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/ft_printf.c -o CMakeFiles/project.dir/ft_printf.c.s
 
 CMakeFiles/project.dir/ft_strchrf.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/ft_strchrf.c.o: ../ft_strchrf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/project.dir/ft_strchrf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_strchrf.c.o   -c /home/phili/Desktop/git/project/ft_strchrf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/project.dir/ft_strchrf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_strchrf.c.o   -c /home/phili/Desktop/git/repo/ft_strchrf.c
 
 CMakeFiles/project.dir/ft_strchrf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/ft_strchrf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/ft_strchrf.c > CMakeFiles/project.dir/ft_strchrf.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/ft_strchrf.c > CMakeFiles/project.dir/ft_strchrf.c.i
 
 CMakeFiles/project.dir/ft_strchrf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/ft_strchrf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/ft_strchrf.c -o CMakeFiles/project.dir/ft_strchrf.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/ft_strchrf.c -o CMakeFiles/project.dir/ft_strchrf.c.s
 
 CMakeFiles/project.dir/ft_strcpyf.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/ft_strcpyf.c.o: ../ft_strcpyf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/project.dir/ft_strcpyf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_strcpyf.c.o   -c /home/phili/Desktop/git/project/ft_strcpyf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/project.dir/ft_strcpyf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/ft_strcpyf.c.o   -c /home/phili/Desktop/git/repo/ft_strcpyf.c
 
 CMakeFiles/project.dir/ft_strcpyf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/ft_strcpyf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/ft_strcpyf.c > CMakeFiles/project.dir/ft_strcpyf.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/ft_strcpyf.c > CMakeFiles/project.dir/ft_strcpyf.c.i
 
 CMakeFiles/project.dir/ft_strcpyf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/ft_strcpyf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/ft_strcpyf.c -o CMakeFiles/project.dir/ft_strcpyf.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/ft_strcpyf.c -o CMakeFiles/project.dir/ft_strcpyf.c.s
 
 CMakeFiles/project.dir/get_arguments.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/get_arguments.c.o: ../get_arguments.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/project.dir/get_arguments.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/get_arguments.c.o   -c /home/phili/Desktop/git/project/get_arguments.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/project.dir/get_arguments.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/get_arguments.c.o   -c /home/phili/Desktop/git/repo/get_arguments.c
 
 CMakeFiles/project.dir/get_arguments.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/get_arguments.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/get_arguments.c > CMakeFiles/project.dir/get_arguments.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/get_arguments.c > CMakeFiles/project.dir/get_arguments.c.i
 
 CMakeFiles/project.dir/get_arguments.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/get_arguments.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/get_arguments.c -o CMakeFiles/project.dir/get_arguments.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/get_arguments.c -o CMakeFiles/project.dir/get_arguments.c.s
 
 CMakeFiles/project.dir/memsetting.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/memsetting.c.o: ../memsetting.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/project.dir/memsetting.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/memsetting.c.o   -c /home/phili/Desktop/git/project/memsetting.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/project.dir/memsetting.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/memsetting.c.o   -c /home/phili/Desktop/git/repo/memsetting.c
 
 CMakeFiles/project.dir/memsetting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/memsetting.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/memsetting.c > CMakeFiles/project.dir/memsetting.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/memsetting.c > CMakeFiles/project.dir/memsetting.c.i
 
 CMakeFiles/project.dir/memsetting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/memsetting.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/memsetting.c -o CMakeFiles/project.dir/memsetting.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/memsetting.c -o CMakeFiles/project.dir/memsetting.c.s
 
 CMakeFiles/project.dir/parser.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/parser.c.o: ../parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/project.dir/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/parser.c.o   -c /home/phili/Desktop/git/project/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/project.dir/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/parser.c.o   -c /home/phili/Desktop/git/repo/parser.c
 
 CMakeFiles/project.dir/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/parser.c > CMakeFiles/project.dir/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/parser.c > CMakeFiles/project.dir/parser.c.i
 
 CMakeFiles/project.dir/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/parser.c -o CMakeFiles/project.dir/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/parser.c -o CMakeFiles/project.dir/parser.c.s
 
 CMakeFiles/project.dir/print.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/print.c.o: ../print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/project.dir/print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/print.c.o   -c /home/phili/Desktop/git/project/print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/project.dir/print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/print.c.o   -c /home/phili/Desktop/git/repo/print.c
 
 CMakeFiles/project.dir/print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/print.c > CMakeFiles/project.dir/print.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/print.c > CMakeFiles/project.dir/print.c.i
 
 CMakeFiles/project.dir/print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/print.c -o CMakeFiles/project.dir/print.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/print.c -o CMakeFiles/project.dir/print.c.s
 
 CMakeFiles/project.dir/print_processing.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/print_processing.c.o: ../print_processing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/project.dir/print_processing.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/print_processing.c.o   -c /home/phili/Desktop/git/project/print_processing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/project.dir/print_processing.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/print_processing.c.o   -c /home/phili/Desktop/git/repo/print_processing.c
 
 CMakeFiles/project.dir/print_processing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/print_processing.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/print_processing.c > CMakeFiles/project.dir/print_processing.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/print_processing.c > CMakeFiles/project.dir/print_processing.c.i
 
 CMakeFiles/project.dir/print_processing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/print_processing.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/print_processing.c -o CMakeFiles/project.dir/print_processing.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/print_processing.c -o CMakeFiles/project.dir/print_processing.c.s
 
 CMakeFiles/project.dir/string_print.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/string_print.c.o: ../string_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/project.dir/string_print.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/string_print.c.o   -c /home/phili/Desktop/git/project/string_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/project.dir/string_print.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/string_print.c.o   -c /home/phili/Desktop/git/repo/string_print.c
 
 CMakeFiles/project.dir/string_print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/string_print.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/string_print.c > CMakeFiles/project.dir/string_print.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/string_print.c > CMakeFiles/project.dir/string_print.c.i
 
 CMakeFiles/project.dir/string_print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/string_print.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/string_print.c -o CMakeFiles/project.dir/string_print.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/string_print.c -o CMakeFiles/project.dir/string_print.c.s
 
 CMakeFiles/project.dir/value_print1.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/value_print1.c.o: ../value_print1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/project.dir/value_print1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/value_print1.c.o   -c /home/phili/Desktop/git/project/value_print1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/project.dir/value_print1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/value_print1.c.o   -c /home/phili/Desktop/git/repo/value_print1.c
 
 CMakeFiles/project.dir/value_print1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/value_print1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/value_print1.c > CMakeFiles/project.dir/value_print1.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/value_print1.c > CMakeFiles/project.dir/value_print1.c.i
 
 CMakeFiles/project.dir/value_print1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/value_print1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/value_print1.c -o CMakeFiles/project.dir/value_print1.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/value_print1.c -o CMakeFiles/project.dir/value_print1.c.s
 
 CMakeFiles/project.dir/itoa_functions.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/itoa_functions.c.o: ../itoa_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/project.dir/itoa_functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/itoa_functions.c.o   -c /home/phili/Desktop/git/project/itoa_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/project.dir/itoa_functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/itoa_functions.c.o   -c /home/phili/Desktop/git/repo/itoa_functions.c
 
 CMakeFiles/project.dir/itoa_functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/itoa_functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/itoa_functions.c > CMakeFiles/project.dir/itoa_functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/itoa_functions.c > CMakeFiles/project.dir/itoa_functions.c.i
 
 CMakeFiles/project.dir/itoa_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/itoa_functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/itoa_functions.c -o CMakeFiles/project.dir/itoa_functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/itoa_functions.c -o CMakeFiles/project.dir/itoa_functions.c.s
 
 CMakeFiles/project.dir/value_print2.c.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/value_print2.c.o: ../value_print2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/project.dir/value_print2.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/value_print2.c.o   -c /home/phili/Desktop/git/project/value_print2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/project.dir/value_print2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project.dir/value_print2.c.o   -c /home/phili/Desktop/git/repo/value_print2.c
 
 CMakeFiles/project.dir/value_print2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project.dir/value_print2.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/project/value_print2.c > CMakeFiles/project.dir/value_print2.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phili/Desktop/git/repo/value_print2.c > CMakeFiles/project.dir/value_print2.c.i
 
 CMakeFiles/project.dir/value_print2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project.dir/value_print2.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/project/value_print2.c -o CMakeFiles/project.dir/value_print2.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phili/Desktop/git/repo/value_print2.c -o CMakeFiles/project.dir/value_print2.c.s
 
 # Object files for target project
 project_OBJECTS = \
@@ -310,7 +310,7 @@ project: CMakeFiles/project.dir/itoa_functions.c.o
 project: CMakeFiles/project.dir/value_print2.c.o
 project: CMakeFiles/project.dir/build.make
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -323,6 +323,6 @@ CMakeFiles/project.dir/clean:
 .PHONY : CMakeFiles/project.dir/clean
 
 CMakeFiles/project.dir/depend:
-	cd /home/phili/Desktop/git/project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phili/Desktop/git/project /home/phili/Desktop/git/project /home/phili/Desktop/git/project/cmake-build-debug /home/phili/Desktop/git/project/cmake-build-debug /home/phili/Desktop/git/project/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/phili/Desktop/git/repo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/phili/Desktop/git/repo /home/phili/Desktop/git/repo /home/phili/Desktop/git/repo/cmake-build-debug /home/phili/Desktop/git/repo/cmake-build-debug /home/phili/Desktop/git/repo/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project.dir/depend
 

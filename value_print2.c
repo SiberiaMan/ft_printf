@@ -30,7 +30,7 @@ static  int                     find_null(t_param obj)
 {
     if (ft_strchrf("xX", obj.type) && obj.fl_octal == 1)
         return (2);
-    else if (!obj.fl_minus && !obj.fl_plus && !obj.fl_space)
+    else if (!obj.is_negative && !obj.fl_plus && !obj.fl_space)
         return (0);
     return (1);
 }
