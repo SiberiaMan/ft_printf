@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/phili/Desktop/git/project/file.c
+ft_printf.h
+/home/phili/Desktop/git/project/ft_printf.h
+
+/home/phili/Desktop/git/project/ft_printf.h
+stdlib.h
+-
+unistd.h
+-
+stdarg.h
+-
+stdio.h
+-
+

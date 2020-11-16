@@ -26,18 +26,13 @@ static  void                       flag_war(t_param *obj)
         obj->fl_plus = 0;
 }
 
-static  int                     find_null(char *prec_ptr)
+static  int                     find_null(t_param obj)
 {
-    int len;
-
-    len = 0;
-    while(*prec_ptr != '0')
-    {
-        len++;
-        prec_ptr++;
-    }
-
-    return (len);
+    if (ft_strchrf("xX", obj.type) && obj.fl_octal == 1)
+        return (2);
+    else if (!obj.fl_minus && !obj.fl_plus && !obj.fl_space)
+        return (0);
+    return (1);
 }
 
 static  void                    apply_flags(t_param obj, char *prec_ptr)
@@ -58,12 +53,11 @@ static  void                    apply_flags(t_param obj, char *prec_ptr)
         prec_ptr[0] = '-';
 }
 
-int                     print_value_end(t_param obj, char *prec_ptr, int size, int fl_to_second)
+int                     print_value_end_prec(t_param obj, char *prec_ptr, int size)
 {
     int     size_buff;
     char    *buff_ptr;
 
-    if (fl_to_second) {
         size_buff = MAX(obj.width, size);
         if (!(buff_ptr = ft_callocf(size_buff, sizeof(char), (obj.fl_null == 1 ? '0' : ' '))))
             return (0);
@@ -71,30 +65,45 @@ int                     print_value_end(t_param obj, char *prec_ptr, int size, i
             if (obj.fl_minus)
                 ft_strcpyf(buff_ptr, prec_ptr, size);
             else
-                ft_strcpyf(&buff_ptr[size_buff - size], prec_ptr, size); //free
+                ft_strcpyf(&buff_ptr[size_buff - size], prec_ptr, size); //free(...)
         } else
             ft_strcpyf(buff_ptr, prec_ptr, size);
         ft_putstrf(buff_ptr, size_buff, 1);
-    }
-    else {
-        ft_putstrf(prec_ptr, size, 1);
-        size_buff = size;
-    }
     return (size_buff);
+}
+
+int                     print_value_end_width(t_param obj, char *str)
+{
+    char    *buff_ptr;
+    int     add_size;
+    int     buff_size;
+
+    add_size = 0;
+    if (obj.fl_octal)
+        add_size = 2;
+    else if (obj.fl_plus || obj.fl_space || obj.is_negative)
+        add_size = 1;
+    buff_size = MAX(ft_strlen(str) + add_size, obj.width);
+    if(!(buff_ptr = (char*)ft_callocf(buff_size, sizeof(char), '0')))
+        return (0);
+    apply_flags(obj, buff_ptr);
+    if (ft_strlen(str) > obj.width)
+        ft_strcpyf(&buff_ptr[find_null(obj)], str, ft_strlen(str));
+    else
+        ft_strcpyf(&buff_ptr[buff_size - ft_strlen(str)], str, ft_strlen(str));
+    ft_putstrf(buff_ptr, buff_size, 1);
+    return (buff_size);
 }
 
 int                     print_value_begin(t_param obj, char *str)
 {
     char    *prec_ptr;
     int     size;
-    int     fl_to_second;
 
     flag_war(&obj);
-    fl_to_second = 1;
-    if (!obj.precision && obj.width) {
-        obj.precision = obj.width;
-        fl_to_second = 0;
-    }
+
+    if (!obj.is_precision && (obj.fl_space || obj.fl_plus || obj.is_negative || obj.fl_octal) && obj.fl_null)
+        return (print_value_end_width(obj, str));
     size = MAX(ft_strlen(str), obj.precision);
     if (obj.fl_space || obj.fl_plus || obj.is_negative || obj.fl_octal)
     {
@@ -110,7 +119,7 @@ int                     print_value_begin(t_param obj, char *str)
     if (obj.precision > ft_strlen(str))
         ft_strcpyf(&prec_ptr[size - ft_strlen(str)], str, ft_strlen(str));
     else
-        ft_strcpyf(&prec_ptr[find_null(prec_ptr)], str, ft_strlen(str));
-    return (print_value_end(obj, prec_ptr, size, fl_to_second));
+        ft_strcpyf(&prec_ptr[find_null(obj)], str, ft_strlen(str));
+    return (print_value_end_prec(obj, prec_ptr, size));
 }
 

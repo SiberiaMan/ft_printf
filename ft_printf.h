@@ -71,6 +71,6 @@ int						to_print_val(t_param obj, va_list list);
 char					*ft_itoa_signed_base(char *str, long long int n, t_param *obj);
 char					*ft_itoa_unsigned_base(char *str, size_t n);
 int                     print_value_begin(t_param obj, char *str);
-int                     print_value_end(t_param obj, char *prec_ptr, int size, int fl_to_second);
+int                     print_value_end_prec(t_param obj, char *prec_ptr, int size);
 
 #endif

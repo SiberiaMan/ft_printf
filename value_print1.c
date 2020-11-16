@@ -33,6 +33,8 @@ static	int						to_print_unsigned_val(t_param obj, va_list list)
 	    str = ft_itoa_unsigned_base("0123456789ABCDEF", n);
 	else
 		str = ft_itoa_unsigned_base("0123456789", n);
+    if (obj.fl_octal == 1 && n == 0)
+        obj.fl_octal = 0;
 	return (print_value_begin(obj, str));
 }
 
