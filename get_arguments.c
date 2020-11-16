@@ -21,12 +21,14 @@ t_param		init_obj(void)
 		.fl_plus = 0,
 		.fl_minus = 0,
 		.fl_space = 0,
+		.fl_octal = 0,
 		.expect_width = 0,
 		.width = 0,
 		.expect_precision = 0,
 		.precision = 0,
 		.is_precision = 0,
 		.modifier = NAN,
+		.is_negative = 0,
 		.is_unsigned = 0,
 		.type = 0
 	};
@@ -43,6 +45,8 @@ void		flag_assign(char *format, int *i, t_param *obj)
 		obj->fl_plus = 1;
 	if (format[*i] == ' ')
 		obj->fl_space = 1;
+	if (format[*i] == '#')
+	    obj->fl_octal = 1;
 	(*i)++;
 }
 

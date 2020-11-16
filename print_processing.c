@@ -28,8 +28,8 @@ int			print_processing(t_param obj, va_list list)
 	//printf("%d\n", obj.precision);
 	if (is_str_n_val(obj.type) == -1)
 		return (to_print_str(obj, list));
-	//else if (is_str_n_val(obj.type) == 0)
-		//return (to_print_n(obj, list));
-	//else
-	//	return (to_print_val(obj, list));
+	/*else if (is_str_n_val(obj.type) == 0)
+		return (to_print_n(obj, list)); */
+	else
+		return (to_print_val(obj, list));
 }

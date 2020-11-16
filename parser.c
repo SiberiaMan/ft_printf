@@ -22,7 +22,7 @@ int         end_check(char *format, int *i)
 	fl_l = 0;
 	fl_h = 0;
 //	printf("%c\n%s\n", format[*i], "HERE");
-	if (format[*i] && is_modifier(format[*i]))
+	while (format[*i] && is_modifier(format[*i]))
 	{
 		cnt++;
 		if (cnt > 2 || (fl_l && fl_h))
