@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 15:21:30 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/12 17:26:33 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 20:40:09 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,4 @@ int			ft_putcharf(char c, int is_format)
 		return (1);
 	}
 	return (0);
-}
-
-void		to_print(char *s, int min_buf)
-{
-	while(min_buf--)
-	{
-		ft_putcharf(*s, 1);
-		s++;
-	}
 }

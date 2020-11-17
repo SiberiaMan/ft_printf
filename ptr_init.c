@@ -1,35 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoif.c                                         :+:      :+:    :+:   */
+/*   ptr_init.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/07 20:19:42 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 17:02:29 by dchani           ###   ########.fr       */
+/*   Created: 2020/11/17 16:15:48 by dchani            #+#    #+#             */
+/*   Updated: 2020/11/17 17:40:09 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int					ft_atoif(char *str, int *i)
+int					init_ptr(t_param obj, va_list list)
 {
-	int		res;
-	int		fl;
+	void		*ptr;
 
-	res = 0;
-	fl = 1;
-	if (*str == '-' || *str == '+')
-	{
-		if (*str == '-')
-			fl = -1;
-		str++;
-	}
-	while ('0' <= *str && *str <= '9')
-	{
-		(*i)++;
-		res = res * 10 + *str - '0';
-		str++;
-	}
-	return (res * fl);
+	ptr = va_arg(list, void *);
+	(*(int*)ptr) = obj.length;
+	return (0);
 }

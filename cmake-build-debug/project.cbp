@@ -2,129 +2,43 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="project"/>
+		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="clang"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/phili/Desktop/git/repo/cmake-build-debug"/>
+				<Option working_dir="/Users/dchani/21/ft_printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/phili/Desktop/git/repo/cmake-build-debug"/>
+				<Option working_dir="/Users/dchani/21/ft_printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/phili/Desktop/git/repo/cmake-build-debug"/>
+				<Option working_dir="/Users/dchani/21/ft_printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project">
-				<Option output="/home/phili/Desktop/git/repo/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/phili/Desktop/git/repo/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project/fast">
-				<Option output="/home/phili/Desktop/git/repo/cmake-build-debug/project" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/phili/Desktop/git/repo/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/phili/Desktop/git/repo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dchani/21/ft_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/phili/Desktop/git/repo/check_arg.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/file.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/ft_atoif.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/ft_printf.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/ft_printf.h">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/ft_strchrf.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/ft_strcpyf.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/get_arguments.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/itoa_functions.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/memsetting.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/parser.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/print.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/print_processing.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/string_print.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/value_print1.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/value_print2.c">
-			<Option target="project"/>
-		</Unit>
-		<Unit filename="/home/phili/Desktop/git/repo/CMakeLists.txt">
+		<Unit filename="/Users/dchani/21/ft_printf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

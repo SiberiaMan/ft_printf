@@ -6,18 +6,11 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:36:24 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/16 12:49:52 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 17:17:51 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-static int			ft_toupper(int c)
-{
-	if (('a' <= c) && (c <= 'z'))
-		return (c - 32);
-	return (c);
-}
 
 static int			value_length_unsigned(size_t n, int length_base)
 {
@@ -34,32 +27,19 @@ static int			value_length_unsigned(size_t n, int length_base)
 	return (size);
 }
 
-static int          value_length_signed(long long int n, int length_base)
+static int			value_length_signed(long long int n)
 {
-    int size;
+	int size;
 
-    size = 0;
-    if (n == 0)
-        return (1);
-    while(n)
-    {
-        size++;
-        n /= 10;
-    }
-    return (size);
-}
-
-static void			to_upper(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
+	size = 0;
+	if (n == 0)
+		return (1);
+	while (n)
 	{
-	    printf("%c\n", str[i]);
-		str[i] = (char)(ft_toupper(str[i]));
-		i++;
+		size++;
+		n /= 10;
 	}
+	return (size);
 }
 
 char				*ft_itoa_unsigned_base(char *str, size_t n)
@@ -84,7 +64,8 @@ char				*ft_itoa_unsigned_base(char *str, size_t n)
 	return (ptr);
 }
 
-char				*ft_itoa_signed_base(char *str, long long int n, t_param *obj)
+char				*ft_itoa_signed_base(char *str, long long int n,
+					t_param *obj)
 {
 	char	*ptr;
 	int		size;
@@ -93,7 +74,7 @@ char				*ft_itoa_signed_base(char *str, long long int n, t_param *obj)
 
 	len_base = ft_strlen(str);
 	fl = (n < 0 ? 1 : 0);
-	size = value_length_signed(n, len_base);
+	size = value_length_signed(n);
 	ptr = (char*)malloc(size + 1);
 	if (!ptr)
 		return (0);
@@ -102,7 +83,6 @@ char				*ft_itoa_signed_base(char *str, long long int n, t_param *obj)
 		ptr[0] = '0';
 	while (n)
 	{
-	    //printf("%c\n", ABS(n % 10) + str[0]);
 		ptr[size--] = ABS(n % 10) + str[0];
 		n /= 10;
 	}

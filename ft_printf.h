@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 14:42:00 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/16 12:55:15 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 20:42:07 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef	struct			s_param
 	int					fl_plus;
 	int					fl_minus;
 	int					fl_space;
-	int                 fl_octal;
+	int					fl_octal;
 	int					expect_width;
 	int					width;
 	int					expect_precision;
@@ -41,7 +41,8 @@ typedef	struct			s_param
 	int					precision;
 	t_modifier			modifier;
 	int					is_unsigned;
-	int                 is_negative;
+	int					is_negative;
+	int					length;
 	char				type;
 }						t_param;
 
@@ -60,17 +61,21 @@ void					to_print(char *s, int min_buf);
 int						is_modifier(char c);
 int						is_type(char c);
 int						is_unsigned(char c);
-int						is_str_n_val(char c);
+int						is_str_n_val_ptr(char c);
 int						print_processing(t_param obj, va_list list);
 int						to_print_str(t_param obj, va_list list);
 int						ft_strlen(const char *str);
 void					ft_strcpyf(char *dst, char *src, size_t dstsize);
-int						get_arg(char *format, int i, va_list list);
+int						get_arg(char *format, int i, va_list list, int length);
 int						parser(char *format, va_list list);
 int						to_print_val(t_param obj, va_list list);
-char					*ft_itoa_signed_base(char *str, long long int n, t_param *obj);
+char					*ft_itoa_signed_base(char *str, long long int n,
+						t_param *obj);
 char					*ft_itoa_unsigned_base(char *str, size_t n);
-int                     print_value_begin(t_param obj, char *str);
-int                     print_value_end_prec(t_param obj, char *prec_ptr, int size);
+int						print_value_begin(t_param obj, char *str);
+int						to_print_ptr(t_param obj, va_list list);
+int						init_ptr(t_param obj, va_list list);
+void					free_mem(int n, ...);
+void					flag_war(t_param *obj);
 
 #endif

@@ -13,26 +13,33 @@ char	*init(void)
 
 int main()
 {
-    printf("START CHECK\n\n");
-    printf("============================");
-    printf("\n STRING CHECKING \n");
-    printf("============================\n");
 
+    long int *x;
+    long int a =  28;
+    x = &a;
+
+    printf("          START CHECK\n\n");
+    printf("============================");
+    printf("\n        STRING CHECKING \n");
+    printf("===============1============\n");
 	printf("%d\n", printf("%----15c\n", 'd'));
 	printf("============================\n");
-	printf("%d\n", ft_printf("%----15c\n", 'd'));  
+	ft_printf("%d\n", ft_printf("%----15c\n", 'd'));
+    printf("===============2============\n");
 	printf("%d\n", printf("%-*.*s\n%-5.100s\n", 20, 5, "Hello", "World"));
     printf("============================\n");
-    printf("%d\n", ft_printf("%-*.*s\n%-5.100s\n", 20, 5,  "Hello", "World"));
-	printf("%d\n", printf("%5.c", 'c'));
+    ft_printf("%d\n", ft_printf("%-*.*s\n%-5.100s\n", 20, 5,  "Hello", "World"));
+    printf("===============3============\n");
+	printf("%d\n", printf("%5.c\n", 'c'));
     printf("============================\n");
-    printf("%d\n", ft_printf("%5.c", 'c'));
-	printf("%d\n", printf("%5.s", "Hello World"));
+    ft_printf("%d\n", ft_printf("%5.c\n", 'c'));
+    printf("===============4============\n");
+	printf("%d\n", printf("%5.s\n", "Hello World"));
     printf("============================\n");
-    printf("%d\n", ft_printf("%5.s", "Hello World"));
-
+    ft_printf("%d\n", ft_printf("%5.s\n", "Hello World"));
+    printf("========END STRING CHECK========\n");
     printf("============================");
-	printf("\n VALUE CHECKING \n");
+	printf("\n        VALUE CHECKING \n");
     printf("============================\n");
 
     printf("==============1=============\n");
@@ -119,7 +126,18 @@ int main()
     printf("%d\n", printf("%+05d\n", 889));
     printf("---------------------------\n");   // -> failed test
     ft_printf("%d\n", ft_printf("%+05d\n", 889));
-   // printf("%*d\n", -10, 3);
-    //ft_printf("%*d", -10, 3);
-    //printf("END CHECK");
+    printf("==============22===========\n");
+    printf("Hello %n\n %d  %hhi\n", x, 67890, 'i');
+    printf("---------------------------\n");
+    ft_printf("Hello %n\n %d  %hhi\n", x, 67890, 'i');
+    printf("==============23===========\n");
+    printf("%d\n", printf("%-30.p\n", 0));
+    printf("---------------------------\n");
+    ft_printf("%d\n", ft_printf("%-30.p\n", 0));
+    printf("==============25===========\n");
+    printf("%*d\n %-s\n%-#012x\n", -10, 5, "Hello", 89);
+    printf("---------------------------\n");
+    ft_printf("%*d\n %-s\n%-#012x\n", -10, 5, "Hello", 89);
+    printf("==============26===========\n");
+    printf("END CHECK");
 }

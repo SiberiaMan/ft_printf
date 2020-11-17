@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:51:39 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/16 12:57:44 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 17:50:47 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ static	int						to_print_unsigned_val(t_param obj, va_list list)
 	if (ft_strchrf("x", obj.type))
 		str = ft_itoa_unsigned_base("0123456789abcdef", n);
 	else if (ft_strchrf("X", obj.type))
-	    str = ft_itoa_unsigned_base("0123456789ABCDEF", n);
+		str = ft_itoa_unsigned_base("0123456789ABCDEF", n);
 	else
 		str = ft_itoa_unsigned_base("0123456789", n);
-    if (obj.fl_octal == 1 && n == 0)
-        obj.fl_octal = 0;
+	if (obj.fl_octal == 1 && n == 0)
+		obj.fl_octal = 0;
 	return (print_value_begin(obj, str));
 }
 

@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoif.c                                         :+:      :+:    :+:   */
+/*   free_memory.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/07 20:19:42 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 17:02:29 by dchani           ###   ########.fr       */
+/*   Created: 2020/11/17 18:45:14 by dchani            #+#    #+#             */
+/*   Updated: 2020/11/17 18:47:44 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int					ft_atoif(char *str, int *i)
+void		free_mem(int n, ...)
 {
-	int		res;
-	int		fl;
+	va_list		list;
+	char		*ptr;
 
-	res = 0;
-	fl = 1;
-	if (*str == '-' || *str == '+')
+	va_start(list, n);
+	while (n--)
 	{
-		if (*str == '-')
-			fl = -1;
-		str++;
+		ptr = (char*)va_arg(list, char*);
+		free(ptr);
+		ptr = 0;
 	}
-	while ('0' <= *str && *str <= '9')
-	{
-		(*i)++;
-		res = res * 10 + *str - '0';
-		str++;
-	}
-	return (res * fl);
 }

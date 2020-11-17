@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 15:31:23 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/08 16:39:38 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 19:17:14 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int			is_flag(char c)
 {
-	return (ft_strchrf("-+ #0", c)); // Find char c and return char or null
+	return (ft_strchrf("-+ #0", c));
 }
 
 int			is_modifier(char c)
@@ -29,11 +29,13 @@ int			is_type(char c)
 
 int			is_unsigned(char c)
 {
-	return(ft_strchrf("ouxX", c) != 0);
+	return (ft_strchrf("ouxX", c) != 0);
 }
 
-int			is_str_n_val(char c)
+int			is_str_n_val_ptr(char c)
 {
+	if (ft_strchrf("p", c))
+		return (-2);
 	if (ft_strchrf("sc%", c))
 		return (-1);
 	if (ft_strchrf("n", c))

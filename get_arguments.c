@@ -6,13 +6,13 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 17:08:13 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/12 20:48:54 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/17 20:44:21 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-t_param		init_obj(void)
+static	t_param		init_obj(void)
 {
 	t_param param;
 
@@ -30,12 +30,13 @@ t_param		init_obj(void)
 		.modifier = NAN,
 		.is_negative = 0,
 		.is_unsigned = 0,
-		.type = 0
+		.type = 0,
+		.length = 0
 	};
 	return (param);
 }
 
-void		flag_assign(char *format, int *i, t_param *obj)
+static	void		flag_assign(char *format, int *i, t_param *obj)
 {
 	if (format[*i] == '0')
 		obj->fl_null = 1;
@@ -46,11 +47,11 @@ void		flag_assign(char *format, int *i, t_param *obj)
 	if (format[*i] == ' ')
 		obj->fl_space = 1;
 	if (format[*i] == '#')
-	    obj->fl_octal = 1;
+		obj->fl_octal = 1;
 	(*i)++;
 }
 
-void		modifier_assign(char *format, int *i, t_param *obj)
+static	void		modifier_assign(char *format, int *i, t_param *obj)
 {
 	t_modifier mdf;
 
@@ -78,7 +79,7 @@ void		modifier_assign(char *format, int *i, t_param *obj)
 	obj->modifier = mdf;
 }
 
-void		assign(char *format, int i, t_param *obj)
+static	void		assign(char *format, int i, t_param *obj)
 {
 	while (is_flag(format[i]))
 		flag_assign(format, &i, obj);
@@ -102,14 +103,14 @@ void		assign(char *format, int i, t_param *obj)
 	modifier_assign(format, &i, obj);
 	obj->is_unsigned = is_unsigned(format[i]);
 	obj->type = format[i];
-	//printf("ME HERE%d\n", obj->precision);
 }
 
-int			get_arg(char *format, int i, va_list list)
+int					get_arg(char *format, int i, va_list list, int length)
 {
 	t_param obj;
 
 	obj = init_obj();
-	assign(format, i, &obj); // Получили структуру с флагами и размерами, написать вывод и войну флагов
+	obj.length = length;
+	assign(format, i, &obj);
 	return (print_processing(obj, list));
 }
