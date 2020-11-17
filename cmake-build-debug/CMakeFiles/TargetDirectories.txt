@@ -1,2 +1,0 @@
-/Users/dchani/21/ft_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dchani/21/ft_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
