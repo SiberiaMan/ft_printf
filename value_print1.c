@@ -6,11 +6,30 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:51:39 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 17:50:47 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 16:16:25 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+static	int						stupid_case(t_param obj, char *str)
+{
+	free_mem(1, str);
+	if (obj.fl_plus && !obj.fl_minus)
+		return (ft_printf("%*c", obj.width, '+'));
+	else if (obj.fl_plus && obj.fl_minus)
+		return (ft_printf("%-*c", obj.width, '+'));
+	else if (!obj.fl_plus && obj.width && obj.fl_minus)
+		return (ft_printf("%-*c", obj.width, ' '));
+	else if (!obj.fl_plus && obj.width && !obj.fl_minus)
+		return (ft_printf("%*c", obj.width, ' '));
+	if (obj.fl_space && !obj.fl_minus)
+		return (ft_printf("%*c", obj.width, ' '));
+	else if (obj.fl_space && obj.fl_minus)
+		return (ft_printf("%-*c", obj.width, ' '));
+	else
+		return (0);
+}
 
 static	int						to_print_unsigned_val(t_param obj, va_list list)
 {
@@ -35,6 +54,8 @@ static	int						to_print_unsigned_val(t_param obj, va_list list)
 		str = ft_itoa_unsigned_base("0123456789", n);
 	if (obj.fl_octal == 1 && n == 0)
 		obj.fl_octal = 0;
+	if (obj.is_precision && !obj.precision && !n)
+		return (stupid_case(obj, str));
 	return (print_value_begin(obj, str));
 }
 
@@ -54,6 +75,8 @@ static	int						to_print_signed_val(t_param obj, va_list list)
 	else
 		n = (int)va_arg(list, int);
 	str = ft_itoa_signed_base("0123456789", n, &obj);
+	if (obj.is_precision && !obj.precision && !n)
+		return (stupid_case(obj, str));
 	return (print_value_begin(obj, str));
 }
 

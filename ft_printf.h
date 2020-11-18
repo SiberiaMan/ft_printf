@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 14:42:00 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 20:42:07 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 21:00:20 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-# include <stdio.h>
+#include <stdio.h>
 
 # define ABS(x) ((x) > 0 ? x : x * (-1))
 # define MIN(a, b) ((a > b) ? b : a)

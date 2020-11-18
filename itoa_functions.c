@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 12:36:24 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 17:17:51 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 12:27:47 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char				*ft_itoa_unsigned_base(char *str, size_t n)
 	while (n)
 	{
 		ptr[size--] = str[n % len_base];
-		n /= 16;
+		n /= len_base;
 	}
 	return (ptr);
 }
@@ -83,8 +83,8 @@ char				*ft_itoa_signed_base(char *str, long long int n,
 		ptr[0] = '0';
 	while (n)
 	{
-		ptr[size--] = ABS(n % 10) + str[0];
-		n /= 10;
+		ptr[size--] = ABS(n % len_base) + str[0];
+		n /= len_base;
 	}
 	if (fl)
 		obj->is_negative = 1;

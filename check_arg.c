@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 15:31:23 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 19:17:14 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 16:26:58 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ int			is_modifier(char c)
 
 int			is_type(char c)
 {
-	return (ft_strchrf("diouxXfFgGaAcsSpn%", c) != 0);
+	return (ft_strchrf("diuxXcspn%", c) != 0);
 }
 
 int			is_unsigned(char c)
 {
-	return (ft_strchrf("ouxX", c) != 0);
+	return (ft_strchrf("uxX", c) != 0);
 }
 
 int			is_str_n_val_ptr(char c)

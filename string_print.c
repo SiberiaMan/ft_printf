@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 18:01:25 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 22:09:26 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 12:44:26 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,12 @@ static	int			char_process(t_param obj, va_list list)
 
 	min_buf = 1;
 	min_buf = ((obj.width > min_buf) ? obj.width : min_buf);
-	str = ft_callocf(sizeof(char), min_buf, ' ');
+	if (obj.type == '%' && obj.fl_null && !obj.fl_minus)
+		str = ft_callocf(sizeof(char), min_buf, '0');
+	else
+		str = ft_callocf(sizeof(char), min_buf, ' ');
+	if (!str)
+		return (0);
 	if (obj.type != '%' && str && obj.fl_minus)
 		str[0] = (char)va_arg(list, int);
 	else if (obj.type == '%' && str && obj.fl_minus)
@@ -60,7 +65,7 @@ static	int			char_process(t_param obj, va_list list)
 static	char		*prec_processing(t_param obj, char *catch_str,
 					int *fl, int *min_buf)
 {
-	if (obj.is_precision)
+	if (obj.is_precision && obj.precision >= 0)
 	{
 		catch_str = ft_strcut(catch_str, obj.precision);
 		*min_buf = MAX(obj.width, ft_strlen(catch_str));

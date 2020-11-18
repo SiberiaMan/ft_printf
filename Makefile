@@ -15,26 +15,24 @@ SRC		=	check_arg.c\
 			ptr_init.c\
 			str_functions.c\
 			string_print.c\
-			value_print.c\
+			value_print1.c\
 			value_print2.c\
 
-headers	=	ft_printf.h
+HRDS	=	ft_printf.h
 
 OBJS	= $(SRC:.c=.o)
 
-B_OBJS	= $(BNS:.c=.o)
-
-$(NAME): $(headers)
-	gcc -Wall -Wextra -Werror -c $(SRC) -I $(headers)
+$(NAME): $(HDRS)
+	gcc -Wall -Wextra -Werror -c $(SRC) -I $(HDRS)
 	ar rc $(NAME) $(OBJS)
 
 all:	$(NAME)
 
 clean:
-	rm -rf $(OBJS) $(B_OBJS)
+	rm -rf $(OBJS)
 
 fclean: clean
-	rm -rf libft.a
+	rm -rf libftprintf.a
 
 re: fclean all
 

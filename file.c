@@ -140,4 +140,9 @@ int main()
     ft_printf("%*d\n %-s\n%-#012x\n", -10, 5, "Hello", 89);
     printf("==============26===========\n");
     printf("END CHECK");
+   //ft_printf("%-10.3s", "Hello");
+    //printf("===============2============\n");
+   // printf("%d\n", printf("%-*.*s\n%-5.100s\n", 20, 5, "Hello", "World"));
+   // printf("============================\n");
+    ft_printf("%d\n", ft_printf("%-*.*s\n%-5.100s\n", 20, 3,  "Hello", "World"));
 }

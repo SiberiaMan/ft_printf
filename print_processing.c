@@ -6,7 +6,7 @@
 /*   By: dchani <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 15:57:55 by dchani            #+#    #+#             */
-/*   Updated: 2020/11/17 17:38:54 by dchani           ###   ########.fr       */
+/*   Updated: 2020/11/18 12:27:06 by dchani           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@ int			print_processing(t_param obj, va_list list)
 		obj.width = ABS(size);
 	}
 	if (obj.expect_precision)
+	{
 		obj.precision = va_arg(list, int);
+		obj.is_precision = 1;
+	}
 	if (is_str_n_val_ptr(obj.type) == -2)
 		return (to_print_ptr(obj, list));
 	if (is_str_n_val_ptr(obj.type) == -1)
